@@ -6,4 +6,5 @@ TIP_SPORT = [
     ("GYM"),
     ("TENIS"),
     ("PING-PONG"),
-    ("BILIARD")]
+    ("BILIARD")
+]

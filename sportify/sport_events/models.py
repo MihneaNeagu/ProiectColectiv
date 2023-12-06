@@ -15,3 +15,7 @@ class SportEvent(models.Model):
     locatie = models.CharField(max_length=255, null=True)
     status = models.BooleanField(default=False, null=True)
     limit_capacity = models.IntegerField(null=True)
+
+    def _str_(self):
+        return f"{self.sport_type}, {self.date}, {self.ora}, {self.locatie}, {self.status}," \
+               f" {self.limit_capacity}"

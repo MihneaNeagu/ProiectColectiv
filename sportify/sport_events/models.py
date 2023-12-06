@@ -4,13 +4,13 @@ from django.db import models
 
 from django.contrib.auth import get_user_model
 from django.db import models
-from .constants import TIP_SPORT
+from .constants import TIP_SPORT, DATE
 sport_event = get_user_model()
 
 
 class SportEvent(models.Model):
     sport_type = models.CharField(max_length=255, choices=TIP_SPORT, null=True)
-    date = models.DateField(null=True)
+    date = models.CharField(max_length=255, choices=DATE, null=True)
     ora = models.TimeField(null=True)
     locatie = models.CharField(max_length=255, null=True)
     status = models.BooleanField(default=False, null=True)

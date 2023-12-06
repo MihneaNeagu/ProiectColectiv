@@ -1,10 +1,20 @@
 TIP_SPORT = [
     ("", "Select a SPORT:"),
     ("FOTBAL", "Football"),
-    ("HANDBALL", "Handball"),
-    ("VOLLEY", "Volleyball"),
-    ("GYM", "Gymnastics"),
+    ("BRAZILIAN JIU JITSU", "Bjj"),
+    ("MIXED MARTIAL ARTS", "MMA"),
+    ("KICKBOX", "Kickbox"),
     ("TENIS", "Tennis"),
-    ("PING-PONG", "Ping Pong"),
-    ("BILIARD", "Billiards")
+    ("BOX", "Box"),
+]
+
+DATE = [
+    ("", "Select a DATE:"),
+    ("MONDAY", "Monday"),
+    ("TUESDAY", "Tuesday"),
+    ("WEDNESDAY", "Wednesday"),
+    ("THURSDAY", "Thursday"),
+    ("FRIDAY", "Friday"),
+    ("SATURDAY", "Saturday"),
+    ("SUNDAY", "Sunday")
 ]

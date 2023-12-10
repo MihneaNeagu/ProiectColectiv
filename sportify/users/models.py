@@ -10,7 +10,7 @@ User = get_user_model()
 
 
 class User(models.Model):
-    username = models.CharField(max_length=255, null=True)
+    username = models.CharField(max_length=255, null=True, unique=True) 
     password = models.CharField(max_length=255, null=True)
 
     def __str__(self):

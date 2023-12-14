@@ -2,7 +2,6 @@ from django.urls import path
 from .views import UserListAPIView, UserDetailAPIView, GetUserAPI, AddUserAPI
 from . import views
 
-
 urlpatterns = [
     path('users', UserListAPIView.as_view()),
     path('users/<int:pk>', UserDetailAPIView.as_view()),

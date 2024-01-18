@@ -8,7 +8,9 @@ from django.contrib.auth import authenticate
 
 from users.models import User
 
-from .serializers import UserSerializer, CreateUserSerializer
+from .serializers import UserSerializer, UserAddSerializer
+
+import logging
 
 #User = get_user_model()
 
@@ -60,4 +62,4 @@ class AddUserAPI(generics.CreateAPIView):
     #permission_classes = [IsAuthenticated]
 
     queryset = User.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = UserAddSerializer

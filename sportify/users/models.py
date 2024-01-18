@@ -12,6 +12,8 @@ User = get_user_model()
 class User(models.Model):
     username = models.CharField(max_length=255, unique=True) 
     password = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+    phoneNumber = models.CharField(max_length=20)
 
     def __str__(self):
-        return f"{self.id}, {self.username}, {self.password}"
+        return f"{self.id}, {self.username}, {self.password}, {self.email}, {self.phoneNumber}"

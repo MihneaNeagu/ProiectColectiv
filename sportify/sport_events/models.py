@@ -9,6 +9,7 @@ sport_event = get_user_model()
 
 
 class SportEvent(models.Model):
+    username = models.CharField(max_length=255, null=True, unique=True)
     sport_type = models.CharField(max_length=255, choices=TIP_SPORT, null=True)
     date = models.CharField(max_length=255, choices=DATE, null=True)
     ora = models.TimeField(null=True)
@@ -17,5 +18,5 @@ class SportEvent(models.Model):
     limit_capacity = models.IntegerField(null=True)
 
     def _str_(self):
-        return f"{self.sport_type}, {self.date}, {self.ora}, {self.locatie}, {self.status}," \
+        return f"{self.username}, {self.sport_type}, {self.date}, {self.ora}, {self.locatie}, {self.status}," \
                f" {self.limit_capacity}"

@@ -8,3 +8,7 @@ from .serializers import SportEventSerializer
 
 class SportEventView(generics.CreateAPIView):
     serializer_class = SportEventSerializer
+
+def sport_events(request):
+    # Your view logic here
+    return render(request, 'your_template_name.html') 
